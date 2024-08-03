@@ -6,6 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <script>
+			function toggleReadMore(project) {
+				var moreText = document.querySelector('.' + project + '-read-more-content');
+				var buttonText = document.querySelector('.' + project + '-read-more-button');
+				if (moreText.style.display === "none" || moreText.style.display === "") {
+					moreText.style.display = "inline";
+					buttonText.innerHTML = "Read Less";
+				} else {
+					moreText.style.display = "none";
+					buttonText.innerHTML = "Read More";
+				}
+			}
+		</script>
 	</head>
 
 
