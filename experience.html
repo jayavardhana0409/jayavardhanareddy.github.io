@@ -1,110 +1,120 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Traffic Incidents - Road Accident Dashboard</title>
+    <title>Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background: #f4f4f4;
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script>
+        function toggleReadMore(project) {
+            var moreText = document.getElementById(project + '-read-more-content');
+            var buttonText = document.getElementById(project + '-read-more-button');
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline";
+                buttonText.innerHTML = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                buttonText.innerHTML = "Read More";
+            }
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Content -->
-        <section class="content">
-            <header>
-                <h1>Road Accident Dashboard</h1>
-            </header>
-            <div class="image main">
-                <img src="images/Excel_Road Accident.png" alt="Excel Dashboard" />
-            </div>
-            <p>
-                <strong>Overview:</strong>
-                This project aims to create a comprehensive dashboard for road accidents that occurred in the years 2021 and 2022. The dashboard provides insights into various key performance indicators (KPIs) related to casualties, accident severity, vehicle types, road types, road surface conditions, and other factors.
-            </p>
-            <p>
-                <strong>Project Structure:</strong>
-                <ul>
-                    <li><strong>Data Cleaning and Preprocessing:</strong> The provided road accidents dataset was cleaned and preprocessed to ensure data quality and consistency.</li>
-                    <li><strong>Data Analysis:</strong> Pivot tables and other Excel functions were utilized to analyze the data and derive key insights.</li>
-                    <li><strong>Dashboard Creation:</strong> The Excel dashboard was created to visualize the analyzed data and present the insights in an easily understandable format.</li>
-                </ul>
-            </p>
-            <p>
-                <strong>Dashboard Requirements:</strong>
-                <ul>
-                    <li><strong>Primary KPI:</strong> Total casualties taken place after the accident.</li>
-                    <li><strong>Primary KPIs:</strong>
-                        <ul>
-                            <li>Total casualties & percentage of total with respect to accident severity.</li>
-                            <li>Maximum casualties by type of vehicle.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Secondary KPIs:</strong> Total casualties with respect to vehicle type.</li>
-                    <li><strong>Monthly Trend:</strong> Comparison of casualties for the current year and the previous year.</li>
-                    <li><strong>Maximum Casualties by Road Type.</strong></li>
-                    <li><strong>Distribution of Total Casualties by Road Surface.</strong></li>
-                    <li><strong>Relation between Casualties by Area/Location & by Day/Night.</strong></li>
-                </ul>
-            </p>
-            <p>
-                <strong>Files Included:</strong>
-                <ul>
-                    <li><strong>Road_Accidents_Data.xlsx:</strong> Excel file containing the cleaned and preprocessed dataset.</li>
-                    <li><strong>Road_Accident_Dashboard.xlsx:</strong> Excel file containing the dashboard with visualizations and insights.</li>
-                    <li><strong>README.md:</strong> This file, providing an overview of the project and instructions for use.</li>
-                </ul>
-            </p>
-            <p>
-                <strong>Instructions for Use:</strong>
-                <ol>
-                    <li>Clone or download the repository to your local machine.</li>
-                    <li>Open the "Road_Accident_Dashboard.xlsx" file using Microsoft Excel.</li>
-                    <li>Navigate through the different sheets and tabs to explore the dashboard visualizations.</li>
-                    <li>Interact with the dashboard filters and slicers to dynamically analyze the data.</li>
-                </ol>
-            </p>
-            <p>
-                <strong>Additional Notes:</strong>
-                The dashboard is designed to be user-friendly and intuitive, allowing stakeholders to gain valuable insights into road accidents.
-            </p>
-            <div>
-                <img src="https://github.com/jayavardhana0409/Road-Accident-Dashboard/blob/85ba509f8027f20d5a91fd6b9fd6cf5d41b48aa7/Excel_Road%20Accident.png" alt="Excel Dashboard" />
-                <img src="https://github.com/jayavardhana0409/Road-Accident-Dashboard/blob/e38da08c2253bbdbef0b8209c5bbc201214610c0/Road%20accident%20.png" alt="Tableau Dashboard" />
-            </div>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Jayavardhana Reddy</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Experience</a></li>
+            <li class="active"><a href="experience.html">Projects</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/jay1737/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/jayavardhana0409" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="mailto:jaireddy1737@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="Sai_Jayavardhana_Reddy.pdf" download class="icon solid fa-download"><span class="label">Download CV</span></a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <!-- Posts -->
+        <section class="posts">
+            <article>
+                <header>
+                    <h2><a href="https://github.com/jayavardhana0409/Cohort-Analysis">Cohort Analysis For Retail Sales </a></h2>
+                </header>
+                <a href="https://github.com/jayavardhana0409/Cohort-Analysis"><img src="images/Cohort-Analysis.png" alt="" class="image fit" /></a>
+                <p>
+                    This project delves into cohort analysis, a statistical method used to understand customer behavior over time. By employing SQL queries, the analysis filters relevant
+                    <span id="cohort-read-more-content" style="display: none;">
+                        data from a retail sales dataset, defines cohorts based on customer IDs and purchase dates, calculates retention rates, and visualizes the data through dynamic pivot tables. Through this project, I demonstrate proficiency in SQL, data analysis, and visualization techniques, highlighting my ability to derive insights and make data-driven decisions crucial for businesses in the retail sector.
+                        <br>
+                        <a href="https://github.com/jayavardhana0409/Cohort-Analysis" class="button">View Project</a>
+                    </span>
+                </p>
+                <button id="cohort-read-more-button" onclick="toggleReadMore('cohort')">Read More</button>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Nashville Housing Data Cleaning</a></h2>
+                </header>
+                <a href="https://github.com/jayavardhana0409/Nashville-Housing-Data-Analysis-"><img src="images/nashville-pic.jpeg" alt="" class="image fit" /></a>
+                <p>This project entails the development of a comprehensive data cleaning script tailored for the Nashville Housing dataset. The script addresses various data preprocessing
+                    <span id="nashville-read-more-content" style="display: none;">
+                        tasks, including the extraction and conversion of dates into a standardized format, handling null values by updating them based on specific criteria, and splitting address fields to improve data granularity. Additionally, it includes functionality to extract components from the OwnerAddress field, standardize values in the SoldASVacant column, and remove duplicate rows efficiently. With meticulous attention to detail and clear documentation, this script streamlines the data cleaning process, ensuring data integrity and consistency for further analysis. Users are advised to back up their data and customize the script according to their database structure and requirements before implementation.
+                        <br>
+                        <a href="https://github.com/jayavardhana0409/Nashville-Housing-Data-Analysis-" class="button">View Project</a>
+                    </span>
+                </p>
+                <button id="nashville-read-more-button" onclick="toggleReadMore('nashville')">Read More</button>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Covid-19</a></h2>
+                </header>
+                <a href="https://github.com/jayavardhana0409/Covid-19"><img src="images/COVID 19.png" alt="" class="image fit" /></a>
+                <p>
+                    This project showcases a collection of SQL queries tailored for COVID-19 data analysis, utilizing two primary tables: CovidDeaths and CovidVaccinations. The
+                    <span id="Covid-read-more-content" style="display: none;">
+                        queries encompass diverse tasks, ranging from basic row counting to advanced calculations such as death percentages and vaccination rates. Notably, it includes queries for retrieving and filtering data based on specific criteria, calculating percentages at both country and global levels, and analyzing vaccination trends. Additionally, the project introduces views and temporary tables for enhanced data visualization and manipulation, facilitating comprehensive insights into the pandemic's impact. With its broad scope and analytical depth, this project demonstrates proficiency in SQL data manipulation and offers valuable insights into understanding the dynamics of the COVID-19 crisis.
+                        <br>
+                        <a href="https://github.com/jayavardhana0409/Covid-19" class="button">View Project</a>
+                    </span>
+                </p>
+                <button id="Covid-read-more-button" onclick="toggleReadMore('Covid')">Read More</button>
+            </article>
+            <article>
+                <header>
+                    <h2><a href="#">Traffic Incidents</a></h2>
+                </header>
+                <a href="https://github.com/jayavardhana0409/Road-Accident-Dashboard"><img src="images/Excel_Road Accident.png" alt="" class="image fit" /></a>
+                <p>The Road Accident Dashboard is a comprehensive data analytics project designed to provide insights into road accidents occurring in 2021 and 2022. Through
+                    <span id="traffic-read-more-content" style="display: none;">
+                        meticulous data cleaning and preprocessing, followed by in-depth analysis using Excel functions like pivot tables, the dashboard offers stakeholders a clear understanding of key performance indicators such as total casualties, accident severity distribution, and maximum casualties by vehicle type. With features including monthly trend analysis, casualties by road type and surface condition, and the relation between casualties by area/location and day/night, the dashboard facilitates informed decision-making in road safety planning and policy formulation. Its intuitive interface allows for dynamic exploration of the data, empowering stakeholders to identify trends, patterns, and areas for targeted intervention, ultimately contributing to the goal of reducing road accidents and minimizing casualties for safer communities.
+                        <br>
+                        <a href="https://github.com/jayavardhana0409/Road-Accident-Dashboard" class="button">View Project</a>
+                    </span>
+                </p>
+                <button id="traffic-read-more-button" onclick="toggleReadMore('traffic')">Read More</button>
+            </article>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Footer content goes here -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
